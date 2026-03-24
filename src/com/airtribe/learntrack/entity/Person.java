@@ -1,8 +1,8 @@
 package com.airtribe.learntrack.entity;
 
-public class Person {
+public class Person {////Inheritance; Person is the parent class for both Student and Trainer
 
-    private int id;
+    private int id; //Encapsulation
     private String firstName;
     private String lastName;
     private String email;
@@ -14,7 +14,7 @@ public class Person {
         this.email = email;
     }
 
-    public String getDisplayName() {
+    public String getDisplayName() { //Controlled access
         return firstName + " " + lastName;
     }
 

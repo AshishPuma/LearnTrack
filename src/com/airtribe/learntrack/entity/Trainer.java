@@ -1,17 +1,17 @@
 package com.airtribe.learntrack.entity;
 
-public class Trainer extends Person {
+public class Trainer extends Person {////Inheritance; Trainer IS-A Person
 
-    private String expertise;
+    private String expertise; //Encapsulation
     private int experience;
 
     public Trainer(int id, String firstName, String lastName, String email, String expertise, int experience) {
-        super(id, firstName, lastName, email);
+        super(id, firstName, lastName, email); //Calls the parent class constructor
         this.expertise = expertise;
         this.experience = experience;
     }
 
-    public String getExpertise() {
+    public String getExpertise() { //Controlled access
         return expertise;
     }
 
