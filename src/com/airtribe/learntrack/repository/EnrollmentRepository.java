@@ -7,7 +7,7 @@ import java.util.List;
 
 public class EnrollmentRepository {
 
-    private ArrayList<Enrollment> enrollments = new ArrayList<>();
+    private final ArrayList<Enrollment> enrollments = new ArrayList<>();
 
     public void addEnrollment(Enrollment enrollment) {
         if (enrollment != null) {
